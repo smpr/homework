@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
 import Posts from './components/Posts';
 import Navbar from './components/Navbar';
+import styled from 'styled-components';
 
+const AppWrapper = styled.div`
+
+
+`
 class App extends Component {
   render() {
     return (
-      <div>
+      <AppWrapper>
+        <div>
         <Navbar />
+        </div>
+        <div>
         <Posts />
-      </div>
+        </div>
+      </AppWrapper>
     );
   }
 }
